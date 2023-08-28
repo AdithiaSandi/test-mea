@@ -1,0 +1,61 @@
+.login-container {
+  display: flex;
+  height: 100vh;
+}
+
+.login-container button {
+    font-family: "Roboto", sans-serif;
+    background-color: transparent;
+    border: none;
+    width: 20%;
+    font-size: 25px;
+    justify-content: center;
+    padding: 1rem 0;
+    font-weight: 700;
+}
+
+.login-container button:first-child {
+    color: orangered;
+    border-bottom: 1px solid orangered;
+}
+
+.login-container button:last-child {
+    color: gray;
+}
+
+.login-banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9iUnWi0VG-VnYSPDjNTWYw9lx3Rw8PZTv-A&usqp=CAU");
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-width: 50vw;
+  color: white;
+  align-items: center;
+  text-align: center;
+  padding-top: 40vh;
+  font-size: 25px;
+}
+
+.action-container {
+    min-width: 50vw;
+}
+
+.action-container .action-btn-container {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    border-bottom: 1px solid lightgray;
+    padding-top: 2vh;
+}
+
+.action-form-container input[type="email"],
+.action-form-container input#password {
+    border: 0px;
+    border-radius: 5px;
+    outline: solid lightgray;
+    padding: 1rem;
+}
+
+input[type="submit"]:disabled {
+    opacity: 0.5;
+}
