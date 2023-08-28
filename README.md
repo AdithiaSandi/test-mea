@@ -1,8 +1,10 @@
-# React + Vite
+# How - To
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+1. Login using
+    - Nama Lengkap : <candidate@mail.com>
+    - Kata Sandi : 123123
+2. Click button
+   ![An old rock in the desert](./src/assets/readme-guide-2.png)
+3. Browse using button below video player
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+###### Endpoints by MEA Digital Marketing
