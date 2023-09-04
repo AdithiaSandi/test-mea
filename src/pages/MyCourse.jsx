@@ -39,9 +39,12 @@ const MyCourse = () => {
           style={{
             backgroundColor: "#253237",
             borderRadius: "10px",
-            display: "flex",
-            flexWrap: "wrap",
-            justifyContent: "space-around",
+            display: "grid",
+            gridTemplateColumns: "repeat(auto-fill,minmax(300px, 1fr))",
+            alignItems: "center",
+            justifyItems: "center",
+            // flexWrap: "wrap",
+            // justifyContent: "space-around",
             padding: "2rem 2rem 4rem 2rem"
           }}
         >
