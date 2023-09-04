@@ -43,8 +43,6 @@ const MyCourse = () => {
             gridTemplateColumns: "repeat(auto-fill,minmax(300px, 1fr))",
             alignItems: "center",
             justifyItems: "center",
-            // flexWrap: "wrap",
-            // justifyContent: "space-around",
             padding: "2rem 2rem 4rem 2rem"
           }}
         >
