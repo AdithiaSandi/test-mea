@@ -1,5 +1,7 @@
 .login-container {
   display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
   height: 100vh;
 }
 
@@ -28,16 +30,15 @@
     url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT9iUnWi0VG-VnYSPDjNTWYw9lx3Rw8PZTv-A&usqp=CAU");
   background-size: cover;
   background-repeat: no-repeat;
-  min-width: 50vw;
+  width: 50vw;
   color: white;
-  align-items: center;
   text-align: center;
   padding-top: 40vh;
   font-size: 25px;
 }
 
 .action-container {
-    min-width: 50vw;
+    width: 50vw;
 }
 
 .action-container .action-btn-container {
@@ -58,4 +59,14 @@
 
 input[type="submit"]:disabled {
     opacity: 0.5;
+}
+
+@media screen and (max-width: 500px){
+    .login-banner {
+        width: 100vw;
+    }
+
+    .action-container {
+        width: 100vw;
+    }
 }
