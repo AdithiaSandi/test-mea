@@ -1,12 +1,32 @@
 :root {
   font-family: "Roboto", sans-serif;
+  /* scrollbar-gutter: stable; */
+}
+
+::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+  background: linear-gradient(to bottom, #253237 0%, #253237 143px, #58717b 143px, #58717b 100% );
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 0.815rem;
+  background-color: #484845;
+}
+
+html {
+  /* scrollbar-gutter: stable; */
+  overflow-y: scroll;
+  overflow-x: hidden;
+  background: #dadbd6;
 }
 
 body {
   margin: 0;
 }
 
-input[type="submit"]:hover{
+input[type="submit"]:hover {
   cursor: pointer;
 }
 
