@@ -47,6 +47,7 @@ const Login = () => {
       document.getElementById("password").type = "password";
     }
   };
+
   return (
     <div className="login-container">
       <div className="login-banner">
@@ -135,7 +136,7 @@ const Login = () => {
                 fontSize: "20px",
                 padding: "1rem 0",
               }}
-              disabled={email.length === 0 | password.length === 0}
+              disabled={(email.length === 0) | (password.length === 0)}
             />
           </form>
         </div>
