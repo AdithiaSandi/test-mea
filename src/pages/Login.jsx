@@ -27,14 +27,19 @@ const Login = () => {
   };
 
   const handleLogin = (e) => {
-    e.preventDefault();
-    fetch("https://staging.komunitasmea.com/api/login", options)
-      .then((response) => response.json())
-      .then((response) => {
-        localStorage.setItem("mea-login", JSON.stringify(response.data));
-        navigate("/home");
-      })
-      .catch((err) => console.error(err));
+    if (email !== "candidate@mail.com" || password !== "123123") {
+      e.preventDefault();
+      alert("wrong credentials");
+    } else {
+      e.preventDefault();
+      fetch("https://staging.komunitasmea.com/api/login", options)
+        .then((response) => response.json())
+        .then((response) => {
+          localStorage.setItem("mea-login", JSON.stringify(response.data));
+          navigate("/home");
+        })
+        .catch((err) => console.error(err));
+    }
   };
 
   const togglePassword = (e) => {
